@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests">
+ 
+  <test name="ChromeTest"  thread-count="3" parallel="classes">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNG.VerifyAmazonBusinessPage"/>
+      <class name="TestNG.VerifyHomePage"/>
+      <class name="TestNG.VerifyAddToCartFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  <test name="EdgeTest"  thread-count="3" parallel="classes">
+  <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestNG.VerifyAmazonBusinessPage"/>
+      <class name="TestNG.VerifyHomePage"/>
+      <class name="TestNG.VerifyAddToCartFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
