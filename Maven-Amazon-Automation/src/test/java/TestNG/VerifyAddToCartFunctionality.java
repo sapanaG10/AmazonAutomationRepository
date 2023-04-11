@@ -48,6 +48,8 @@ public class VerifyAddToCartFunctionality extends Base {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
+		
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
 	}
 	
 	@BeforeClass
