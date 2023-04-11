@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="14" failed="0" skipped="2">
+<testng-results ignored="0" total="16" passed="0" failed="1" skipped="15">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-01T16:13:25 IST" name="Suite" finished-at="2023-04-01T16:15:49 IST" duration-ms="144117">
+  <suite started-at="2023-04-11T16:51:55 IST" name="Suite" finished-at="2023-04-11T16:52:16 IST" duration-ms="21143">
     <groups>
     </groups>
-    <test started-at="2023-04-01T16:13:25 IST" name="EdgeTest" finished-at="2023-04-01T16:15:43 IST" duration-ms="137505">
+    <test started-at="2023-04-11T16:51:55 IST" name="EdgeTest" finished-at="2023-04-11T16:52:01 IST" duration-ms="6364">
       <class name="TestNG.VerifyAddToCartFunctionality">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:13:25 IST" name="openBrowser" finished-at="2023-04-01T16:13:30 IST" duration-ms="4611" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:51:55 IST" name="openBrowser" finished-at="2023-04-11T16:52:01 IST" duration-ms="5916" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -15,162 +15,492 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:13:43 IST" name="createPOMObject" finished-at="2023-04-01T16:13:43 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="createPOMObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121562" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObject -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:13:43 IST" name="goToHomePageItem" finished-at="2023-04-01T16:14:32 IST" duration-ms="49545" status="PASS">
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="goToHomePageItem" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121677" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:14:32 IST" name="verifyTextOnCartPage" finished-at="2023-04-01T16:14:36 IST" duration-ms="3227" status="PASS">
+        <test-method signature="verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="verifyTextOnCartPage" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTextOnCartPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:14:36 IST" name="logOut" finished-at="2023-04-01T16:14:36 IST" duration-ms="722" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTextOnCartPage status=SUCCESS method=VerifyAddToCartFunctionality.verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121700" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:14:36 IST" name="goToHomePageItem" finished-at="2023-04-01T16:14:54 IST" duration-ms="17137" status="PASS">
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="goToHomePageItem" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121707" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:14:54 IST" name="verifyProceedToCheckOutButton" finished-at="2023-04-01T16:14:59 IST" duration-ms="5436" status="PASS">
+        <test-method signature="verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="verifyProceedToCheckOutButton" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProceedToCheckOutButton -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:14:59 IST" name="logOut" finished-at="2023-04-01T16:15:00 IST" duration-ms="576" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProceedToCheckOutButton status=SUCCESS method=VerifyAddToCartFunctionality.verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121815" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:15:00 IST" name="goToHomePageItem" finished-at="2023-04-01T16:15:43 IST" duration-ms="42965" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: MicrosoftEdge=111.0.1661.62)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50776}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa698be8b836ae78cbe1d968e909e66d
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: MicrosoftEdge=111.0.1661.62)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50776}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa698be8b836ae78cbe1d968e909e66d
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Page.ProductDetailsPage.clickOnAddToCartButton(ProductDetailsPage.java:35)
-at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="goToHomePageItem" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyCartButton()[pri:3, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:15:43 IST" name="verifyCartButton" finished-at="2023-04-01T16:15:43 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyCartButton()[pri:3, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="verifyCartButton" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: MicrosoftEdge=111.0.1661.62)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50776}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa698be8b836ae78cbe1d968e909e66d
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}]]>
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: MicrosoftEdge=111.0.1661.62)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50776}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa698be8b836ae78cbe1d968e909e66d
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Page.ProductDetailsPage.clickOnAddToCartButton(ProductDetailsPage.java:35)
-at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:69)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -179,150 +509,726 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartButton -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:15:43 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345943075" status="SKIP">
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121836" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:15:43 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345943088" status="SKIP">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121842" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-01T16:15:43 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345943091" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@3ce1e309]" started-at="2023-04-11T16:52:01 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121848" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyAddToCartFunctionality -->
       <class name="TestNG.VerifyAmazonBusinessPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:13:30 IST" name="openBrowser" finished-at="2023-04-01T16:13:36 IST" duration-ms="6262" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121449" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:13:43 IST" name="createPOMObject" finished-at="2023-04-01T16:13:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="createPOMObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121621" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObject -->
-        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:13:43 IST" name="goToAmazonBusinessPage" finished-at="2023-04-01T16:14:42 IST" duration-ms="59425" status="PASS">
+        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="goToAmazonBusinessPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121677" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonBusinessPage -->
-        <test-method signature="verifyAmazonBusinessPage()[pri:1, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:14:42 IST" name="verifyAmazonBusinessPage" finished-at="2023-04-01T16:14:50 IST" duration-ms="7837" status="PASS">
+        <test-method signature="verifyAmazonBusinessPage()[pri:1, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="verifyAmazonBusinessPage" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonBusinessPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:14:50 IST" name="afterMethod" finished-at="2023-04-01T16:14:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121693" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:14:50 IST" name="goToAmazonBusinessPage" finished-at="2023-04-01T16:15:23 IST" duration-ms="32298" status="PASS">
+        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="goToAmazonBusinessPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121699" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonBusinessPage -->
-        <test-method signature="verifyLearnMoreAboutAmazonLink()[pri:2, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:15:23 IST" name="verifyLearnMoreAboutAmazonLink" finished-at="2023-04-01T16:15:30 IST" duration-ms="7764" status="PASS">
+        <test-method signature="verifyLearnMoreAboutAmazonLink()[pri:2, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="verifyLearnMoreAboutAmazonLink" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLearnMoreAboutAmazonLink -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:15:30 IST" name="afterMethod" finished-at="2023-04-01T16:15:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121709" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:15:30 IST" name="clearObjects" finished-at="2023-04-01T16:15:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121714" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-01T16:15:43 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345943093" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@6e20b53a]" started-at="2023-04-11T16:52:01 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121851" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyAmazonBusinessPage -->
       <class name="TestNG.VerifyHomePage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:36 IST" name="openBrowser" finished-at="2023-04-01T16:13:43 IST" duration-ms="6965" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121460" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:43 IST" name="createPOMObjects" finished-at="2023-04-01T16:13:43 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121621" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:43 IST" name="goToHomePage" finished-at="2023-04-01T16:13:47 IST" duration-ms="4096" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="goToHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121677" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifyAmazonMiniTvPage()[pri:1, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:47 IST" name="verifyAmazonMiniTvPage" finished-at="2023-04-01T16:13:53 IST" duration-ms="6151" status="PASS">
+        <test-method signature="verifyAmazonMiniTvPage()[pri:1, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="verifyAmazonMiniTvPage" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonMiniTvPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:53 IST" name="afterMethod" finished-at="2023-04-01T16:13:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121697" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:53 IST" name="goToHomePage" finished-at="2023-04-01T16:13:57 IST" duration-ms="3341" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="goToHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121702" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifySearchTextBox()[pri:2, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:13:57 IST" name="verifySearchTextBox" finished-at="2023-04-01T16:14:08 IST" duration-ms="11863" status="PASS">
+        <test-method signature="verifySearchTextBox()[pri:2, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="verifySearchTextBox" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchTextBox -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:14:08 IST" name="afterMethod" finished-at="2023-04-01T16:14:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121718" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:14:08 IST" name="goToHomePage" finished-at="2023-04-01T16:14:12 IST" duration-ms="3825" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="goToHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121804" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifySignInPage()[pri:3, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:14:12 IST" name="verifySignInPage" finished-at="2023-04-01T16:14:25 IST" duration-ms="12478" status="PASS">
+        <test-method signature="verifySignInPage()[pri:3, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="verifySignInPage" finished-at="2023-04-11T16:52:01 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=112.0.1722.34)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8E5A5C2+12658]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DF2862+747634]
+(No symbol) [0x00007FF7A8A8DD2E]
+(No symbol) [0x00007FF7A8A77C01]
+(No symbol) [0x00007FF7A8A79001]
+(No symbol) [0x00007FF7A8A78F30]
+(No symbol) [0x00007FF7A8A66202]
+(No symbol) [0x00007FF7A8A65D7A]
+(No symbol) [0x00007FF7A8AF7316]
+(No symbol) [0x00007FF7A8AEF1C3]
+(No symbol) [0x00007FF7A8AC17D6]
+(No symbol) [0x00007FF7A8AC09B5]
+(No symbol) [0x00007FF7A8AC1F44]
+Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7A8D05530+147088]
+(No symbol) [0x00007FF7A8BA91A6]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D44497+33959]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8D47F65+49013]
+Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7A9039933+1305299]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8DFAE1C+781868]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E00344+803668]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E0049C+804012]
+Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7A8E085A1+837041]
+BaseThreadInitThunk [0x00007FFD5D75269D+29]
+RtlUserThreadStart [0x00007FFD5ECAA9F8+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at browserSetup.Base.openEdgeBrowser(Base.java:20)
+at TestNG.VerifyAddToCartFunctionality.openBrowser(VerifyAddToCartFunctionality.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:14:25 IST" name="afterMethod" finished-at="2023-04-01T16:14:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121808" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:14:25 IST" name="clearObjects" finished-at="2023-04-01T16:14:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121809" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-01T16:15:43 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345943095" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyHomePage@71809907]" started-at="2023-04-11T16:52:01 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212121853" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyHomePage -->
     </test> <!-- EdgeTest -->
-    <test started-at="2023-04-01T16:13:25 IST" name="ChromeTest" finished-at="2023-04-01T16:15:49 IST" duration-ms="144117">
+    <test started-at="2023-04-11T16:51:55 IST" name="ChromeTest" finished-at="2023-04-11T16:52:16 IST" duration-ms="21143">
       <class name="TestNG.VerifyAddToCartFunctionality">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:13:25 IST" name="openBrowser" finished-at="2023-04-01T16:13:30 IST" duration-ms="5367" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:51:55 IST" name="openBrowser" finished-at="2023-04-11T16:51:59 IST" duration-ms="3821" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -333,139 +1239,253 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:13:40 IST" name="createPOMObject" finished-at="2023-04-01T16:13:40 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:06 IST" name="createPOMObject" finished-at="2023-04-11T16:52:06 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObject -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:13:40 IST" name="goToHomePageItem" finished-at="2023-04-01T16:14:32 IST" duration-ms="52019" status="PASS">
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:06 IST" name="goToHomePageItem" finished-at="2023-04-11T16:52:16 IST" duration-ms="10248" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.ResultPage.clickOnFirstMobileDisplayed(ResultPage.java:21)
+at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:14:32 IST" name="verifyTextOnCartPage" finished-at="2023-04-01T16:14:36 IST" duration-ms="3509" status="PASS">
+        <test-method signature="verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="verifyTextOnCartPage" finished-at="2023-04-11T16:52:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.ResultPage.clickOnFirstMobileDisplayed(ResultPage.java:21)
+at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTextOnCartPage -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:14:36 IST" name="logOut" finished-at="2023-04-01T16:14:37 IST" duration-ms="1623" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTextOnCartPage status=SUCCESS method=VerifyAddToCartFunctionality.verifyTextOnCartPage()[pri:1, instance:TestNG.VerifyAddToCartFunctionality@72f926e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136546" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:14:37 IST" name="goToHomePageItem" finished-at="2023-04-01T16:15:02 IST" duration-ms="24562" status="PASS">
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="goToHomePageItem" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136551" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:02 IST" name="verifyProceedToCheckOutButton" finished-at="2023-04-01T16:15:07 IST" duration-ms="5103" status="PASS">
+        <test-method signature="verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="verifyProceedToCheckOutButton" finished-at="2023-04-11T16:52:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.ResultPage.clickOnFirstMobileDisplayed(ResultPage.java:21)
+at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProceedToCheckOutButton -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:07 IST" name="logOut" finished-at="2023-04-01T16:15:07 IST" duration-ms="398" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProceedToCheckOutButton status=SUCCESS method=VerifyAddToCartFunctionality.verifyProceedToCheckOutButton()[pri:2, instance:TestNG.VerifyAddToCartFunctionality@72f926e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136561" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:07 IST" name="goToHomePageItem" finished-at="2023-04-01T16:15:49 IST" duration-ms="41933" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dee181a25ecb6e55f28b60d322ed00a7
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dee181a25ecb6e55f28b60d322ed00a7
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Page.ProductDetailsPage.clickOnAddToCartButton(ProductDetailsPage.java:35)
-at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="goToHomePageItem()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="goToHomePageItem" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136577" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePageItem -->
-        <test-method signature="verifyCartButton()[pri:3, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:49 IST" name="verifyCartButton" finished-at="2023-04-01T16:15:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyCartButton()[pri:3, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="verifyCartButton" finished-at="2023-04-11T16:52:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dee181a25ecb6e55f28b60d322ed00a7
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='add-to-cart-button']"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dee181a25ecb6e55f28b60d322ed00a7
-*** Element info: {Using=xpath, value=//input[@id='add-to-cart-button']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3be8a384356473d383ef16cb3bfa1816
+*** Element info: {Using=xpath, value=(//div[@data-index='2']//div[2])[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -484,8 +1504,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Page.ProductDetailsPage.clickOnAddToCartButton(ProductDetailsPage.java:35)
-at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:69)
+at Page.ResultPage.clickOnFirstMobileDisplayed(ResultPage.java:21)
+at TestNG.VerifyAddToCartFunctionality.goToHomePageItem(VerifyAddToCartFunctionality.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -507,25 +1527,25 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartButton -->
-        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:49 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345949703" status="SKIP">
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136593" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:49 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345949704" status="SKIP">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136599" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-01T16:15:49 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345949705" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAddToCartFunctionality@72f926e6]" started-at="2023-04-11T16:52:16 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136610" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyAddToCartFunctionality -->
       <class name="TestNG.VerifyAmazonBusinessPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:13:30 IST" name="openBrowser" finished-at="2023-04-01T16:13:36 IST" duration-ms="5256" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:51:59 IST" name="openBrowser" finished-at="2023-04-11T16:52:03 IST" duration-ms="3817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -536,45 +1556,180 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:13:40 IST" name="createPOMObject" finished-at="2023-04-01T16:13:40 IST" duration-ms="45" status="PASS">
+        <test-method is-config="true" signature="createPOMObject()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:06 IST" name="createPOMObject" finished-at="2023-04-11T16:52:06 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObject -->
-        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:13:40 IST" name="goToAmazonBusinessPage" finished-at="2023-04-01T16:14:21 IST" duration-ms="40789" status="PASS">
+        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:06 IST" name="goToAmazonBusinessPage" finished-at="2023-04-11T16:52:15 IST" duration-ms="9055" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.HomePage.clickOnAmazonBusinessButton(HomePage.java:61)
+at TestNG.VerifyAmazonBusinessPage.goToAmazonBusinessPage(VerifyAmazonBusinessPage.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonBusinessPage -->
-        <test-method signature="verifyAmazonBusinessPage()[pri:1, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:21 IST" name="verifyAmazonBusinessPage" finished-at="2023-04-01T16:14:22 IST" duration-ms="1407" status="PASS">
+        <test-method signature="verifyAmazonBusinessPage()[pri:1, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="verifyAmazonBusinessPage" finished-at="2023-04-11T16:52:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.HomePage.clickOnAmazonBusinessButton(HomePage.java:61)
+at TestNG.VerifyAmazonBusinessPage.goToAmazonBusinessPage(VerifyAmazonBusinessPage.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonBusinessPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:22 IST" name="afterMethod" finished-at="2023-04-01T16:14:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:22 IST" name="goToAmazonBusinessPage" finished-at="2023-04-01T16:14:33 IST" duration-ms="10953" status="PASS">
+        <test-method is-config="true" signature="goToAmazonBusinessPage()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="goToAmazonBusinessPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212135364" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAmazonBusinessPage -->
-        <test-method signature="verifyLearnMoreAboutAmazonLink()[pri:2, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:33 IST" name="verifyLearnMoreAboutAmazonLink" finished-at="2023-04-01T16:14:40 IST" duration-ms="7282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLearnMoreAboutAmazonLink -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:40 IST" name="afterMethod" finished-at="2023-04-01T16:14:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212135364" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:14:40 IST" name="clearObjects" finished-at="2023-04-01T16:14:40 IST" duration-ms="0" status="PASS">
+        <test-method signature="verifyLearnMoreAboutAmazonLink()[pri:2, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="verifyLearnMoreAboutAmazonLink" finished-at="2023-04-11T16:52:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@href='/business?ref=footer_aingw']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.HomePage.clickOnAmazonBusinessButton(HomePage.java:61)
+at TestNG.VerifyAmazonBusinessPage.goToAmazonBusinessPage(VerifyAmazonBusinessPage.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearnMoreAboutAmazonLink -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212135372" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-01T16:15:49 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345949706" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212135372" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyAmazonBusinessPage@1725dc0f]" started-at="2023-04-11T16:52:16 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136629" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestNG.VerifyAmazonBusinessPage -->
       <class name="TestNG.VerifyHomePage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:36 IST" name="openBrowser" finished-at="2023-04-01T16:13:40 IST" duration-ms="4207" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:03 IST" name="openBrowser" finished-at="2023-04-11T16:52:06 IST" duration-ms="3035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -585,51 +1740,276 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:40 IST" name="createPOMObjects" finished-at="2023-04-01T16:13:40 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:06 IST" name="createPOMObjects" finished-at="2023-04-11T16:52:06 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:40 IST" name="goToHomePage" finished-at="2023-04-01T16:13:47 IST" duration-ms="6462" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:06 IST" name="goToHomePage" finished-at="2023-04-11T16:52:11 IST" duration-ms="5380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifyAmazonMiniTvPage()[pri:1, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:47 IST" name="verifyAmazonMiniTvPage" finished-at="2023-04-01T16:13:55 IST" duration-ms="8494" status="PASS">
+        <test-method signature="verifyAmazonMiniTvPage()[pri:1, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:11 IST" name="verifyAmazonMiniTvPage" finished-at="2023-04-11T16:52:14 IST" duration-ms="2943" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe
+*** Element info: {Using=xpath, value=//h1[text()='Web Series']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe
+*** Element info: {Using=xpath, value=//h1[text()='Web Series']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Page.AmazonMiniTvPage.clickOnWebSeriesButton(AmazonMiniTvPage.java:30)
+at TestNG.VerifyHomePage.verifyAmazonMiniTvPage(VerifyHomePage.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonMiniTvPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:55 IST" name="afterMethod" finished-at="2023-04-01T16:13:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="afterMethod" finished-at="2023-04-11T16:52:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:13:55 IST" name="goToHomePage" finished-at="2023-04-01T16:14:00 IST" duration-ms="4920" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="goToHomePage" finished-at="2023-04-11T16:52:14 IST" duration-ms="34" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyHomePage.goToHomePage(VerifyHomePage.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifySearchTextBox()[pri:2, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:00 IST" name="verifySearchTextBox" finished-at="2023-04-01T16:14:24 IST" duration-ms="23742" status="PASS">
+        <test-method signature="verifySearchTextBox()[pri:2, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="verifySearchTextBox" finished-at="2023-04-11T16:52:14 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyHomePage.goToHomePage(VerifyHomePage.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchTextBox -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:24 IST" name="afterMethod" finished-at="2023-04-01T16:14:24 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212134673" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:24 IST" name="goToHomePage" finished-at="2023-04-01T16:14:34 IST" duration-ms="10541" status="PASS">
+        <test-method is-config="true" signature="goToHomePage()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="goToHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212134677" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomePage -->
-        <test-method signature="verifySignInPage()[pri:3, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:34 IST" name="verifySignInPage" finished-at="2023-04-01T16:14:45 IST" duration-ms="11065" status="PASS">
+        <test-method signature="verifySignInPage()[pri:3, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="verifySignInPage" finished-at="2023-04-11T16:52:14 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHR3PSD', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fcf847e71ef909b8462c36f92b1afbe
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNG.VerifyHomePage.goToHomePage(VerifyHomePage.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:45 IST" name="afterMethod" finished-at="2023-04-01T16:14:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212134685" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:14:45 IST" name="clearObjects" finished-at="2023-04-01T16:14:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:14 IST" name="clearObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212134686" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearObjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-01T16:15:49 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680345949707" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG.VerifyHomePage@15eb5ee5]" started-at="2023-04-11T16:52:16 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681212136629" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

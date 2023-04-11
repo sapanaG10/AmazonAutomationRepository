@@ -4,9 +4,36 @@
   <test thread-count="3" parallel="classes" name="EdgeTest(failed)">
     <parameter name="browser" value="Edge"/>
     <classes>
+      <class name="TestNG.VerifyHomePage">
+        <methods>
+          <include name="verifyAmazonMiniTvPage"/>
+          <include name="clearObjects"/>
+          <include name="verifySearchTextBox"/>
+          <include name="verifySignInPage"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObjects"/>
+          <include name="openBrowser"/>
+          <include name="goToHomePage"/>
+        </methods>
+      </class> <!-- TestNG.VerifyHomePage -->
+      <class name="TestNG.VerifyAmazonBusinessPage">
+        <methods>
+          <include name="verifyAmazonBusinessPage"/>
+          <include name="createPOMObject"/>
+          <include name="openBrowser"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="verifyLearnMoreAboutAmazonLink"/>
+          <include name="clearObjects"/>
+          <include name="goToAmazonBusinessPage"/>
+        </methods>
+      </class> <!-- TestNG.VerifyAmazonBusinessPage -->
       <class name="TestNG.VerifyAddToCartFunctionality">
         <methods>
+          <include name="verifyProceedToCheckOutButton"/>
           <include name="verifyCartButton"/>
+          <include name="verifyTextOnCartPage"/>
           <include name="goToHomePageItem"/>
           <include name="clearObjects"/>
           <include name="afterTest"/>
@@ -20,9 +47,36 @@
   <test thread-count="3" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="TestNG.VerifyHomePage">
+        <methods>
+          <include name="verifyAmazonMiniTvPage"/>
+          <include name="clearObjects"/>
+          <include name="verifySearchTextBox"/>
+          <include name="verifySignInPage"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="createPOMObjects"/>
+          <include name="openBrowser"/>
+          <include name="goToHomePage"/>
+        </methods>
+      </class> <!-- TestNG.VerifyHomePage -->
+      <class name="TestNG.VerifyAmazonBusinessPage">
+        <methods>
+          <include name="verifyAmazonBusinessPage"/>
+          <include name="createPOMObject"/>
+          <include name="openBrowser"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="verifyLearnMoreAboutAmazonLink"/>
+          <include name="clearObjects"/>
+          <include name="goToAmazonBusinessPage"/>
+        </methods>
+      </class> <!-- TestNG.VerifyAmazonBusinessPage -->
       <class name="TestNG.VerifyAddToCartFunctionality">
         <methods>
+          <include name="verifyProceedToCheckOutButton"/>
           <include name="verifyCartButton"/>
+          <include name="verifyTextOnCartPage"/>
           <include name="goToHomePageItem"/>
           <include name="clearObjects"/>
           <include name="afterTest"/>
