@@ -19,6 +19,8 @@ public class AccountCreationPage {
 	@FindBy (xpath="//span[text()='Learn more about Amazon Business']")
 	private WebElement LearnMoreAboutAmazonLink;
 	
+	
+	
 	public AccountCreationPage(WebDriver driver) {
 		   PageFactory.initElements(driver, this);
 	}
