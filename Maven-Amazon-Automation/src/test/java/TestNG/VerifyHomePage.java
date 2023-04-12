@@ -56,6 +56,8 @@ public class VerifyHomePage extends Base {
 		homePage=new HomePage(driver);
 		amazonMiniTvPage=new AmazonMiniTvPage(driver);
 		signInPage=new SignInPage(driver);
+		
+		
 	}
    
 	@BeforeMethod
